@@ -1,0 +1,35 @@
+body:dir(ltr) li {
+  margin: 0 10px 0 0;
+}
+
+body:dir(rtl) li {
+  margin: 0 0 0 10px;
+}
+
+body:dir(rtl) li:last-of-type {
+  margin-right: 0;
+}
+
+body:dir(rtl) li:last-of-type {
+  margin-right: 0;
+}
+
+
+li > button {
+  align-content: center;
+  border: 1px solid rgb(74,74,74);
+  border-radius: 16px;
+  background: rgb(61,61,61);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  padding: 14px 18px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+li > button.selected {
+  background: white;
+  color: rgb(57,57,57);
+}

@@ -1,0 +1,13 @@
+div.scroll-hider {
+  overflow: hidden;
+  max-height: 45px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0 48px;
+  padding: 0 0 40px 0;
+  overflow-x: scroll;
+}

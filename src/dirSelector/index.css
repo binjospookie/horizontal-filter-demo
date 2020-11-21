@@ -1,0 +1,12 @@
+select {
+  position: absolute;
+  top: 40px;
+}
+
+body:dir(ltr) select {
+  left: 40px;
+}
+
+body:dir(rtl) select {
+  right: 40px;
+}
