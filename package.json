@@ -1,7 +1,8 @@
 {
-  "name": "horizontal-filter",
+  "name": "horizontal-filter-demo",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://binjospookie.github.io/horizontal-filter-demo",
   "dependencies": {
     "intersection-observer": "^0.11.0",
     "react": "^17.0.1",
@@ -19,6 +20,7 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/smoothscroll-polyfill": "^0.3.1",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.0",
     "react-scripts": "4.0.0",
     "typescript": "^4.0.3"
@@ -27,7 +29,9 @@
     "start": "rm -rf ./tsconfig.json && BROWSER=none  react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
