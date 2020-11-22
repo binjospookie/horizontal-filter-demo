@@ -3,10 +3,10 @@ select {
   top: 40px;
 }
 
-body:dir(ltr) select {
+body[dir="ltr"] select {
   left: 40px;
 }
 
-body:dir(rtl) select {
+body[dir="rtl"] select {
   right: 40px;
 }

@@ -1,23 +1,23 @@
-body:dir(ltr) li {
+body[dir="ltr"] li {
   margin: 0 10px 0 0;
 }
 
-body:dir(rtl) li {
+body[dir="rtl"] li {
   margin: 0 0 0 10px;
 }
 
-body:dir(rtl) li:last-of-type {
+body[dir="rtl"]li:last-of-type {
   margin-right: 0;
 }
 
-body:dir(rtl) li:last-of-type {
+body[dir="rtl"] li:last-of-type {
   margin-right: 0;
 }
 
 
 li > button {
   align-content: center;
-  border: 1px solid rgb(74,74,74);
+  border: 2px solid rgb(74,74,74);
   border-radius: 16px;
   background: rgb(61,61,61);
   color: white;
@@ -32,4 +32,17 @@ li > button {
 li > button.selected {
   background: white;
   color: rgb(57,57,57);
+}
+
+li > button:focus {
+  border-color: #0094ff;
+  outline: none;
+}
+
+li > button:hover {
+  background: rgb(74,74,74);
+}
+
+li > button.selected:hover {
+  background: white;
 }

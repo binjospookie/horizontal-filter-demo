@@ -11,9 +11,12 @@ button.forward {
 }
 
 button.backward:hover,
-button.forward:hover {
+button.forward:hover,
+button.backward:focus,
+button.forward:focus {
   color: #0094ff;
   cursor: pointer;
+  outline: none;
 }
 
 button.backward:disabled,
@@ -22,28 +25,33 @@ button.forward:disabled {
   cursor: not-allowed;
 }
 
-body:dir(ltr) button.backward {
+body[dir="ltr"] button.backward {
   left: 8px;
 }
-body:dir(ltr) button.forward {
+body[dir="ltr"] button.forward {
   right: 8px;
 }
 
-body:dir(ltr) button.backward svg.flip,
-body:dir(ltr) button.forward svg.flip {
+body[dir="ltr"] button.backward svg.flip,
+body[dir="ltr"] button.forward svg.flip {
   transform: rotate(180deg);
 }
 
-body:dir(rtl) button.backward {
+body[dir="rtl"] button.backward {
   right: 8px;
 }
 
-body:dir(rtl) button.forward {
+body[dir="rtl"] button.forward {
   left: 8px;
 }
 
-body:dir(rtl) button.backward svg:not(.flip),
-body:dir(rtl) button.forward svg:not(.flip) {
+body[dir="rtl"] button.backward svg,
+body[dir="rtl"] button.forward svg {
   transform: rotate(180deg);
+}
+
+body[dir="rtl"] button.backward svg.flip,
+body[dir="rtl"] button.forward svg.flip {
+  transform: rotate(0deg);
 }
 
