@@ -3,18 +3,19 @@ import type { RefObject } from 'react';
 export const makeScrollToItem = ({
   containerRef,
   stickLeft: stickLeftOriginal = true,
+  baseOffset: baseOffsetOriginal = 0,
 }: {
   readonly containerRef: RefObject<HTMLElement>;
   readonly stickLeft?: boolean;
+  readonly baseOffset?: number;
 }) => ({
-  itemRef,
+  item,
   behavior = 'smooth',
   invertStickLeft = false,
-}: ScrollOptions & { readonly itemRef: RefObject<HTMLElement>; readonly invertStickLeft?: boolean }) => {
+}: ScrollOptions & { readonly item: HTMLElement | Element; readonly invertStickLeft?: boolean }) => {
   const { current: container } = containerRef;
-  const { current: item } = itemRef;
 
-  if (!container || !item) {
+  if (!container) {
     return;
   }
 
@@ -24,8 +25,9 @@ export const makeScrollToItem = ({
   const stickLeft = invertStickLeft ? !stickLeftOriginal : stickLeftOriginal;
 
   const offset = stickLeft ? itemX - containerX : -(containerWidth - (itemX - containerX) - itemWidth);
+  const baseOffset = stickLeft ? -baseOffsetOriginal : baseOffsetOriginal;
 
-  container.scrollTo({ left: container.scrollLeft + offset, behavior });
+  container.scrollTo({ left: container.scrollLeft + offset + baseOffset, behavior });
 };
 
 export type MakeScrollToItem = typeof makeScrollToItem;

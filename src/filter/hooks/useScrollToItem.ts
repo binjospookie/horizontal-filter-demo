@@ -1,20 +1,19 @@
 import { useMemo } from 'react';
 import { makeScrollToItem } from '../makeScrollToItem';
 
-import type { RefObject } from 'react';
+import type { MakeScrollToItem } from '../makeScrollToItem';
 
 export const useScrollToItem = ({
-  ref,
+  containerRef,
   stickLeft,
-}: {
-  readonly ref: RefObject<HTMLElement>;
-  readonly stickLeft: boolean;
-}) =>
+  baseOffset,
+}: Parameters<MakeScrollToItem>[0]) =>
   useMemo(
     () =>
       makeScrollToItem({
-        containerRef: ref,
+        containerRef: containerRef,
         stickLeft,
+        baseOffset
       }),
-    [ref, stickLeft],
+    [baseOffset, containerRef, stickLeft],
   );

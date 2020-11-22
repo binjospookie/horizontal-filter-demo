@@ -1,0 +1,5 @@
+pre-commit:
+  parallel: true
+    prettier:
+      run: npm run prettier:check
+

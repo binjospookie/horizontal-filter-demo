@@ -7,6 +7,7 @@ export type ItemValue = string | undefined;
 export type ItemProps = {
   readonly children?: ReactNode;
   readonly selected: ItemValue;
+  readonly setInView?: (x: boolean) => void;
   readonly setSelected: (x: ItemValue) => void;
   readonly scrollToItem: ScrollToItem;
   readonly value: ItemValue;

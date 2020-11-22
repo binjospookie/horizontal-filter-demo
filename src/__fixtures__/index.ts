@@ -7,7 +7,7 @@ export const LTR_DATA = [
   'Tourism',
   'Quantum Mechanics',
   'Recently uploaded',
-  'Mixes'
+  'Mixes',
 ];
 
 // https://github.com/ramyfares/Lorem-Ipsum-Arabic/blob/master/Usable%20Text
@@ -26,5 +26,5 @@ export const RTL_DATA = [
   'لخروف',
   'عليه',
   'فتنازع',
-  'يكتب'
-]
+  'يكتب',
+];

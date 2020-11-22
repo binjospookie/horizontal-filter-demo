@@ -1,6 +1,8 @@
 div.scroll-hider {
-  overflow: hidden;
   max-height: 45px;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
