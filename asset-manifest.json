@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/horizontal-filter-demo/static/css/main.66edca86.chunk.css",
-    "main.js": "/horizontal-filter-demo/static/js/main.d04bec53.chunk.js",
-    "main.js.map": "/horizontal-filter-demo/static/js/main.d04bec53.chunk.js.map",
+    "main.js": "/horizontal-filter-demo/static/js/main.34ca982d.chunk.js",
+    "main.js.map": "/horizontal-filter-demo/static/js/main.34ca982d.chunk.js.map",
     "runtime-main.js": "/horizontal-filter-demo/static/js/runtime-main.95bf8baf.js",
     "runtime-main.js.map": "/horizontal-filter-demo/static/js/runtime-main.95bf8baf.js.map",
     "static/js/2.48c3b795.chunk.js": "/horizontal-filter-demo/static/js/2.48c3b795.chunk.js",
@@ -14,6 +14,6 @@
     "static/js/runtime-main.95bf8baf.js",
     "static/js/2.48c3b795.chunk.js",
     "static/css/main.66edca86.chunk.css",
-    "static/js/main.d04bec53.chunk.js"
+    "static/js/main.34ca982d.chunk.js"
   ]
 }
