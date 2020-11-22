@@ -7,13 +7,14 @@ export const makeScrollToItem = ({
   readonly containerRef: RefObject<HTMLElement>;
   readonly stickLeft?: boolean;
 }) => ({
-  item,
+  itemRef,
   behavior = 'smooth',
   invertStickLeft = false,
-}: ScrollOptions & { readonly item: HTMLElement | Element; readonly invertStickLeft?: boolean }) => {
+}: ScrollOptions & { readonly itemRef: RefObject<HTMLElement>; readonly invertStickLeft?: boolean }) => {
   const { current: container } = containerRef;
+  const { current: item } = itemRef;
 
-  if (!container) {
+  if (!container || !item) {
     return;
   }
 

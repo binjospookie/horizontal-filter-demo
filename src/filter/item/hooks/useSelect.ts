@@ -12,9 +12,9 @@ export const useSelect = ({
   readonly ref: RefObject<HTMLElement>;
 }) =>
   useEffect(() => {
-    if (isSelected && ref.current) {
+    if (isSelected) {
       scrollToItem({
-        item: ref.current,
+        itemRef: ref,
       });
     }
   }, [isSelected, ref, scrollToItem]);
