@@ -1,3 +1,3 @@
 export { useOnClick } from './useOnClick';
 export { useSelect } from './useSelect';
-export { useSetInView } from './useInView';
+export { useSetInView } from './useSetInView';
