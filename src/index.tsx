@@ -1,3 +1,5 @@
+// It's better to import polyfill if it needed. But for demo it's ok :D
+
 import React, { useMemo } from 'react';
 import ReactDOM from 'react-dom';
 import smoothscroll from 'smoothscroll-polyfill';
