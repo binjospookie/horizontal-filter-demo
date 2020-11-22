@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/horizontal-filter-demo/static/css/main.6409cb1c.chunk.css",
-    "main.js": "/horizontal-filter-demo/static/js/main.a405da2d.chunk.js",
-    "main.js.map": "/horizontal-filter-demo/static/js/main.a405da2d.chunk.js.map",
+    "main.css": "/horizontal-filter-demo/static/css/main.87152817.chunk.css",
+    "main.js": "/horizontal-filter-demo/static/js/main.d04bec53.chunk.js",
+    "main.js.map": "/horizontal-filter-demo/static/js/main.d04bec53.chunk.js.map",
     "runtime-main.js": "/horizontal-filter-demo/static/js/runtime-main.95bf8baf.js",
     "runtime-main.js.map": "/horizontal-filter-demo/static/js/runtime-main.95bf8baf.js.map",
-    "static/js/2.1f133fd2.chunk.js": "/horizontal-filter-demo/static/js/2.1f133fd2.chunk.js",
-    "static/js/2.1f133fd2.chunk.js.map": "/horizontal-filter-demo/static/js/2.1f133fd2.chunk.js.map",
+    "static/js/2.48c3b795.chunk.js": "/horizontal-filter-demo/static/js/2.48c3b795.chunk.js",
+    "static/js/2.48c3b795.chunk.js.map": "/horizontal-filter-demo/static/js/2.48c3b795.chunk.js.map",
     "index.html": "/horizontal-filter-demo/index.html",
-    "static/css/main.6409cb1c.chunk.css.map": "/horizontal-filter-demo/static/css/main.6409cb1c.chunk.css.map"
+    "static/css/main.87152817.chunk.css.map": "/horizontal-filter-demo/static/css/main.87152817.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.95bf8baf.js",
-    "static/js/2.1f133fd2.chunk.js",
-    "static/css/main.6409cb1c.chunk.css",
-    "static/js/main.a405da2d.chunk.js"
+    "static/js/2.48c3b795.chunk.js",
+    "static/css/main.87152817.chunk.css",
+    "static/js/main.d04bec53.chunk.js"
   ]
 }
